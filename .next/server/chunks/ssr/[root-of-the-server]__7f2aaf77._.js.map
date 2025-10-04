@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/asvirts/dev/more-than-ok/app/page.tsx"],"sourcesContent":["import {Suspense} from 'react'\nimport Link from 'next/link'\n\nimport {AllPosts} from '@/app/components/Posts'\n\nexport default async function Page() {\n  return (\n    <div className=\"min-h-screen bg-white\">\n      <div className=\"container py-12 sm:py-20\">\n        <div className=\"mb-16\">\n          <h1 className=\"text-5xl sm:text-6xl md:text-7xl font-normal tracking-tight text-black mb-4 max-w-4xl\">Recent Posts</h1>\n        </div>\n      </div>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;;AAKe,eAAe;IAC5B,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC;oBAAG,WAAU;8BAAwF;;;;;;;;;;;;;;;;;;;;;AAKhH","debugId":null}}]
+}
