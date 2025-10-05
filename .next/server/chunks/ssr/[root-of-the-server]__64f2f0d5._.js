@@ -137,11 +137,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Date$2e
 const Post = ({ post, index })=>{
     const { title, slug, excerpt, date, author, coverImage } = post;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-        className: "flex flex-col bg-white overflow-hidden group",
+        className: "flex flex-col bg-white dark:bg-gray-800 overflow-hidden group",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 href: `/posts/${slug}`,
-                className: "block aspect-[16/9] bg-gray-200 overflow-hidden mb-6",
+                className: "block aspect-[16/9] bg-gray-200 dark:bg-gray-700 overflow-hidden mb-6",
                 children: coverImage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: coverImage,
                     alt: title,
@@ -151,7 +151,7 @@ const Post = ({ post, index })=>{
                     lineNumber: 15,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 group-hover:scale-105 transition-transform duration-300"
+                    className: "w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 group-hover:scale-105 transition-transform duration-300"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Posts.tsx",
                     lineNumber: 17,
@@ -170,14 +170,14 @@ const Post = ({ post, index })=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Date$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 dateString: date,
-                                className: "text-sm text-gray-900"
+                                className: "text-sm text-gray-900 dark:text-gray-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Posts.tsx",
                                 lineNumber: 25,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "inline-flex items-center px-3 py-1 text-xs font-medium text-[#2d5442] bg-[#c8f4d9] rounded-md uppercase tracking-wide",
+                                className: "inline-flex items-center px-3 py-1 text-xs font-medium text-[#2d5442] dark:text-[#c8f4d9] bg-[#c8f4d9] dark:bg-[#2d5442] rounded-md uppercase tracking-wide",
                                 children: "Press Releases"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Posts.tsx",
@@ -193,7 +193,7 @@ const Post = ({ post, index })=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: `/posts/${slug}`,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "text-2xl lg:text-3xl font-normal mb-4 leading-tight text-gray-900 hover:text-[#2d5442] transition-colors",
+                            className: "text-2xl lg:text-3xl font-normal mb-4 leading-tight text-gray-900 dark:text-gray-100 hover:text-[#2d5442] dark:hover:text-[#c8f4d9] transition-colors",
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/app/components/Posts.tsx",
@@ -206,7 +206,7 @@ const Post = ({ post, index })=>{
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-base leading-relaxed text-gray-700 mb-6 flex-1",
+                        className: "text-base leading-relaxed text-gray-700 dark:text-gray-300 mb-6 flex-1",
                         children: excerpt
                     }, void 0, false, {
                         fileName: "[project]/app/components/Posts.tsx",
@@ -231,7 +231,7 @@ const Posts = ({ posts, heading })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             heading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "text-3xl font-normal tracking-tight text-black mb-2",
+                className: "text-3xl font-normal tracking-tight text-black dark:text-white mb-2",
                 children: heading
             }, void 0, false, {
                 fileName: "[project]/app/components/Posts.tsx",
@@ -282,7 +282,7 @@ const AllPosts = async ()=>{
             className: "text-center py-12",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-2xl font-normal mb-4 text-black",
+                    className: "text-2xl font-normal mb-4 text-black dark:text-white",
                     children: "No posts yet"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Posts.tsx",
@@ -290,11 +290,11 @@ const AllPosts = async ()=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-gray-700",
+                    className: "text-gray-700 dark:text-gray-300",
                     children: [
                         "Create your first post by adding a ",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                            className: "bg-gray-100 px-2 py-1 rounded",
+                            className: "bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded",
                             children: ".mdx"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Posts.tsx",
@@ -304,7 +304,7 @@ const AllPosts = async ()=>{
                         " file to",
                         ' ',
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                            className: "bg-gray-100 px-2 py-1 rounded",
+                            className: "bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded",
                             children: "content/posts/"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Posts.tsx",
@@ -348,14 +348,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Posts$2
 ;
 async function Page() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-white",
+        className: "bg-white dark:bg-gray-900",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container py-12 sm:py-20",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mb-16",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-5xl sm:text-6xl md:text-7xl font-normal tracking-tight text-black mb-4 max-w-4xl",
+                        className: "text-5xl sm:text-6xl md:text-7xl font-normal tracking-tight text-black dark:text-white mb-4 max-w-4xl",
                         children: "Recent Posts"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",

@@ -57,14 +57,15 @@ export default async function PostPage(props: Props) {
 
   return (
     <>
-      <div className="">
+      <div className="bg-white dark:bg-gray-900">
         <div className="container my-12 lg:my-24 grid gap-12">
           <div>
-            <div className="pb-6 grid gap-6 mb-6 border-b border-gray-100">
+            <div className="pb-6 grid gap-6 mb-6 border-b border-gray-100 dark:border-gray-800">
               <div className="max-w-3xl flex flex-col gap-6">
-                <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-7xl">
                   {post.title}
-                </h2>
+                </h1>
+                <p className='text-gray-500'>{post.excerpt}</p>
               </div>
               <div className="max-w-3xl flex gap-4 items-center">
                 {post.author && post.author.firstName && post.author.lastName && (
@@ -78,14 +79,14 @@ export default async function PostPage(props: Props) {
                   <Image src={post.coverImage} alt={post.title} fill className="object-cover" priority />
                 </div>
               )}
-              <div className="prose prose-lg max-w-2xl">
+              <div className="prose prose-lg dark:prose-invert max-w-2xl">
                 <MDXRemote source={post.content} />
               </div>
             </article>
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-100 bg-gray-50">
+      <div className="border-t border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800">
         <div className="container py-12 lg:py-24 grid gap-12">
           <aside>
             <Suspense>{await MorePosts({skip: post.slug, limit: 2})}</Suspense>

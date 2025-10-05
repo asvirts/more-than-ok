@@ -6,6 +6,7 @@ import {Inter} from 'next/font/google'
 
 import Footer from '@/app/components/Footer'
 import Header from '@/app/components/Header'
+import {ThemeProvider} from '@/app/components/ThemeProvider'
 
 /**
  * Generate metadata for the page.
@@ -29,13 +30,15 @@ const inter = Inter({
 
 export default async function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${inter.variable} bg-white text-black`}>
-      <body className="antialiased">
-        <section className="min-h-screen pt-24">
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </section>
+    <html lang="en" className={`${inter.variable}`}>
+      <body className="antialiased bg-white dark:bg-gray-900 text-black dark:text-white transition-colors">
+        <ThemeProvider>
+          <section className="min-h-screen pt-24">
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </section>
+        </ThemeProvider>
         <SpeedInsights />
       </body>
     </html>
