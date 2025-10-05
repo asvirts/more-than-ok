@@ -35,3 +35,27 @@
 
   --default-transition-duration: 250ms;
 }
+
+/* Link styles */
+a:not(.no-link-style) {
+  color: #16a34a;
+  text-decoration: underline;
+  text-decoration-color: rgba(22, 163, 74, 0.3);
+  text-underline-offset: 3px;
+  transition: all 250ms;
+}
+
+a:not(.no-link-style):hover {
+  color: #15803d;
+  text-decoration-color: rgba(21, 128, 61, 0.5);
+}
+
+.dark a:not(.no-link-style) {
+  color: #4ade80;
+  text-decoration-color: rgba(74, 222, 128, 0.3);
+}
+
+.dark a:not(.no-link-style):hover {
+  color: #22c55e;
+  text-decoration-color: rgba(34, 197, 94, 0.5);
+}

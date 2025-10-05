@@ -88,7 +88,6 @@
     --color-black: #0b0b0b;
     --color-white: #fff;
     --spacing: .25rem;
-    --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
     --text-xs: .75rem;
@@ -122,7 +121,6 @@
     --leading-relaxed: 1.625;
     --radius-md: .375rem;
     --radius-lg: .5rem;
-    --radius-2xl: 1rem;
     --blur-lg: 16px;
     --aspect-video: 16 / 9;
     --default-transition-duration: .25s;
@@ -2050,10 +2048,6 @@
     margin-bottom: 0;
   }
 
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
-
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
@@ -2162,10 +2156,6 @@
     width: 100%;
   }
 
-  .max-w-2xl {
-    max-width: var(--container-2xl);
-  }
-
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
@@ -2180,10 +2170,6 @@
 
   .flex-1 {
     flex: 1;
-  }
-
-  .list-disc {
-    list-style-type: disc;
   }
 
   .grid-cols-1 {
@@ -2234,22 +2220,10 @@
     gap: calc(var(--spacing) * 12);
   }
 
-  :where(.space-y-3 > :not(:last-child)) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
-    margin-bottom: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
-  }
-
   :where(.space-y-4 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-top: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
     margin-bottom: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
-  }
-
-  :where(.space-y-6 > :not(:last-child)) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
-    margin-bottom: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
   }
 
   :where(.space-y-10 > :not(:last-child)) {
@@ -2264,10 +2238,6 @@
 
   .rounded {
     border-radius: .25rem;
-  }
-
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
   }
 
   .rounded-full {
@@ -2299,10 +2269,6 @@
 
   .border-gray-100 {
     border-color: var(--color-gray-100);
-  }
-
-  .border-gray-200 {
-    border-color: var(--color-gray-200);
   }
 
   .border-gray-300 {
@@ -2378,10 +2344,6 @@
     padding: calc(var(--spacing) * 2);
   }
 
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
-  }
-
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -2432,10 +2394,6 @@
 
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
-  }
-
-  .pl-5 {
-    padding-left: calc(var(--spacing) * 5);
   }
 
   .text-center {
@@ -2564,15 +2522,6 @@
     text-transform: uppercase;
   }
 
-  .underline {
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
-  }
-
-  .underline-offset-4 {
-    text-underline-offset: 4px;
-  }
-
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2655,12 +2604,6 @@
   @media (min-width: 40rem) {
     .sm\:h-12 {
       height: calc(var(--spacing) * 12);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
@@ -2798,16 +2741,6 @@
     background-color: var(--color-gray-800);
   }
 
-  .dark\:bg-gray-800\/60:where(.dark, .dark *) {
-    background-color: rgba(37, 40, 55, .6);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .dark\:bg-gray-800\/60:where(.dark, .dark *) {
-      background-color: color-mix(in oklab, var(--color-gray-800) 60%, transparent);
-    }
-  }
-
   .dark\:bg-gray-900:where(.dark, .dark *) {
     background-color: var(--color-gray-900);
   }
@@ -2888,6 +2821,32 @@
       color: #c8f4d9;
     }
   }
+}
+
+a:not(.no-link-style) {
+  color: #16a34a;
+  text-underline-offset: 3px;
+  -webkit-text-decoration: underline rgba(22, 163, 74, .3);
+  text-decoration: underline rgba(22, 163, 74, .3);
+  transition: all .25s;
+}
+
+a:not(.no-link-style):hover {
+  color: #15803d;
+  -webkit-text-decoration-color: rgba(21, 128, 61, .5);
+  text-decoration-color: rgba(21, 128, 61, .5);
+}
+
+.dark a:not(.no-link-style) {
+  color: #4ade80;
+  -webkit-text-decoration-color: rgba(74, 222, 128, .3);
+  text-decoration-color: rgba(74, 222, 128, .3);
+}
+
+.dark a:not(.no-link-style):hover {
+  color: #22c55e;
+  -webkit-text-decoration-color: rgba(34, 197, 94, .5);
+  text-decoration-color: rgba(34, 197, 94, .5);
 }
 
 @property --tw-space-y-reverse {

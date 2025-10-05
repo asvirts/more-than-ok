@@ -59,7 +59,7 @@ export default async function PostPage(props: Props) {
     <>
       <div className="bg-white dark:bg-gray-900">
         <div className="container my-12 lg:my-24">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div className="pb-6 grid gap-6 mb-6 border-b border-gray-100 dark:border-gray-800">
               <div className="w-full flex flex-col gap-6">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-7xl">
