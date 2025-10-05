@@ -58,28 +58,28 @@ export default async function PostPage(props: Props) {
   return (
     <>
       <div className="bg-white dark:bg-gray-900">
-        <div className="container my-12 lg:my-24 grid gap-12">
-          <div>
+        <div className="container my-12 lg:my-24">
+          <div className="max-w-4xl mx-auto">
             <div className="pb-6 grid gap-6 mb-6 border-b border-gray-100 dark:border-gray-800">
-              <div className="max-w-3xl flex flex-col gap-6">
+              <div className="w-full flex flex-col gap-6">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-7xl">
                   {post.title}
                 </h1>
                 <p className='text-gray-500'>{post.excerpt}</p>
               </div>
-              <div className="max-w-3xl flex gap-4 items-center">
+              <div className="w-full flex gap-4 items-center">
                 {post.author && post.author.firstName && post.author.lastName && (
                   <Avatar person={post.author} date={post.date} />
                 )}
               </div>
             </div>
-            <article className="gap-6 grid max-w-4xl">
+            <article className="gap-6 grid w-full">
               {post?.coverImage && (
                 <div className="relative aspect-video w-full overflow-hidden rounded-lg">
                   <Image src={post.coverImage} alt={post.title} fill className="object-cover" priority />
                 </div>
               )}
-              <div className="prose prose-lg dark:prose-invert max-w-2xl">
+              <div className="prose prose-lg dark:prose-invert max-w-none">
                 <MDXRemote source={post.content} />
               </div>
             </article>

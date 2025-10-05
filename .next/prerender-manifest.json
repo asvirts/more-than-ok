@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "97f0b35a68f7342a2dc32292cdadf247",
-    "previewModeSigningKey": "0fb89ddf3d6357c382e7c0ab50bd90cf52777629793cf2146907b3e8bae15922",
-    "previewModeEncryptionKey": "c4eb778f962424a95e19c1de6fbae5fecdb5492656946e46d26289645ad3f978"
-  }
-}
+{"version":4,"routes":{"/posts/dont-sell-the-boat":{}},"dynamicRoutes":{"/posts/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/posts/[slug]","routeRegex":"^\\/posts\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"21e033bedd5ca599db536d58c978df11","previewModeSigningKey":"88ef259ab221fbc0f0da08892389f6e5905875869a801b6b005099dac2bfa767","previewModeEncryptionKey":"558d3bb5a6523a669f10c0322fc315bfc02ca147b708582341d6f6831c2b42d2"}}
