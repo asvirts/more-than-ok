@@ -24,6 +24,11 @@ export default function Header() {
                 </Link>
               </li>
               <li>
+                <Link href="/about" className="hover:underline">
+                  About
+                </Link>
+              </li>
+              <li>
                 <ThemeToggle />
               </li>
             </ul>
